@@ -38,53 +38,50 @@ h1{
 .header h2{
   margin-top: -8px;
 }
+.header h1{
+    font-weight: lighter;
+    margin-top: 0px;
+    font-size: 100%;
+}
 .header input{
   border-radius: 10px;
   border: none;
   padding: 5px;
 }
 
-.googlemap {  
-  display: flex;
-  height: 400px;
-  width: 957px;
-  margin: auto;
-  flex-wrap: nowrap;
-  align-items: center;
-}  
 
-.googlemap iframe {  
-  max-width: 100%; /* Ensure the iframe doesn't exceed 100% width */  
-  height: auto; /* Changed height to auto for responsive behavior */  
-  min-height: 300px; /* Minimum height for the iframe */  
-}  
-
-.location-details {  
-  text-align: center;  
-  margin-bottom: 5px;  
-}  
+.location-details {
+    text-align: center;
+    margin-bottom: -285px;
+    margin-right: 1030px;
+    align-content: space-around;
+  }   
 
 .location-details h1 {  
-  font-size: 2em;  
+  font-size: 2em;
+  margin-left: 110%; 
 }  
 
 .location-details h2 {  
   font-size: 1.5em;   
-  margin-bottom: -15px; /* Negative margin can be unusual; consider using a positive margin instead */  
+  margin-bottom: -15px;
+  margin-left: 80%; 
+  width: 100%;
 }  
 
 .weather-card {  
-  background: white;  
-  border-radius: 8px;  
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
-  padding: 20px;  
-  width: 300px;  
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 327px;
+    margin-left: 75%;
 }  
 
 .weather-card h2 {  
   text-align: center;  
   color: #333;  
-  margin: 8px;  
+  margin: 8px;
 }  
 
 .weather-item {  
@@ -103,21 +100,18 @@ h1{
   color: #777;  
 }   
 
-.contact {  
-  right: 340px;
-  position: relative;
-  display: flex;
-  margin-right: -25px;
-  height: 68%;
-  background-color: #f8f9fa;
-  padding: 9px;
-  border-radius: 8px;
-  text-align: center;
-  margin-bottom: -632px;
-  width: 74%;
-  color: black;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.contact {
+    right: 340px;
+    display: flex;
+    background-color: #f8f9fa;
+    padding: 9px;
+    border-radius: 8px;
+    width: 33%;
+    color: black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 700px;
+    margin-top: 26px;
 }  
 
 .contact a {  
@@ -136,12 +130,41 @@ h1{
 }  
 
 .contactnum a img {  
-  width: 100%; /* Change to 100% for responsive behavior */  
-  max-width: 399px; /* Set a max-width to keep the image size under control */  
-  height: auto; /* Maintain aspect ratio */  
-  transition: transform 0.3s; /* Smooth transition */  
+  width: 100%; /
+  max-width: 399px; 
+  height: auto; 
+  transition: transform 0.3s; 
 }  
 
 .contactnum a:hover img {  
-  transform: scale(1.1); /* Slightly enlarge the image on hover */  
+  transform: scale(1.1);  
+}
+
+.google-map{
+    border: none;
+    margin-top: 2%;
+    width: 99%;
+    margin: 10px;
+}
+.footer {
+    background-color: rgb(205, 50, 50);
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    font-family: 'Arial', sans-serif;
+    position: relative; 
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px; 
+}
+
+.footer a {
+    color: white;
+    text-decoration: none; 
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
