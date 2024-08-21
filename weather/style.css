@@ -1,102 +1,131 @@
-body{
-  margin: 0px;
-}
-.header{
+* {  
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+}  
+
+body {  
+  font-family: 'Inter', sans-serif;  
+  background-color: #f5f5f5;  
+  color: #333;  
+  line-height: 1.6;  
+}  
+
+.header {  
+  color: white;
+  background-color: #d92727;
   display: flex;
   height: 50px;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
-  background-color: aqua;
-}
-.header img{
-  height: 100%;
-  width: auto;
-}
-.header input {  
-  border-radius: 4px;
-  border: none;
-  padding: 4px 15px;
-  font-size: 16px;
-  width: 12%;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s, border 0.3s;
-  background-color: #ffffffb8;
+  padding: 23px;
 }  
 
-.header input:focus {  
-  outline: none; 
-  box-shadow: 0 0 5px rgba(0, 120, 255, 0.5); 
-  background-color: #fff;  
-}
-
-.location-marker{
-  height: 70%;
-  width: auto;
-  display: flex;
-  align-items: center;
-}
-.marker-icon {  
-  height: 100%;
-  width: auto;
-  color: #FF5733;
-  font-size: 50%;
-}
-.contactcalls a{
-  text-decoration: none;
-  margin: 5px;
-  font-size: 120%;
-}
-
-.wegolmap {  
-  position: relative;  
-  width: 100%;  
-  height: 882px; /* Set to match the iframe height */  
+.header h2 {  
+  margin-bottom: 1px;
+  font-size: 22px;
 }  
 
-.wegolmap iframe {  
-  width: 100%;  
-  height: 100%;  
-  border: 0;  
+.header input[type="text"] {  
+  padding: 10px;  
+  width: 200px;  
+  border: none;  
+  border-radius: 5px;  
+  margin-right: 10px;  
 }  
 
-.location-details {
-  display: flex;
-  text-align: center;
-  position: absolute;
-  top: 13%; /* Adjust this value using percentages for better responsiveness */
-  left: 4%; /* Center the container horizontally */
-  transform: translateX(-50%); /* Adjust the positioning to remain centered */
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  padding: 16px;
+.header button {  
+  padding: 10px 15px;  
+  background-color: #006db9;  
+  color: white;  
+  border: none;  
+  border-radius: 5px;  
+  cursor: pointer;  
+}  
+
+.header button:hover {  
+  background-color: #0056a1;  
+}  
+
+.weather-card {  
+  background-color: white;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
-  width: 80%; /* Use a percentage to make it responsive */
-  max-width: 100px; /* Set a maximum width for larger screens */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
   justify-content: space-around;
 }  
 
-@media (max-width: 768px) {  
-  .location-details {  
-    width: 90%; /* Increase width on smaller screens */  
-    padding: 12px; /* Adjust padding for smaller devices */  
-    left: 17%;
-  }  
-} 
-
-.weather-card {  
-  display: flex;  
-  flex-direction: column;  
-}  
-
-.weather-card h2{
-  font-size: 100%;
-}
 
 .weather-item {  
-  margin-bottom: 10px;  
+  margin: 10px 0;  
 }  
 
 .weather-item label {  
   font-weight: bold;  
+}  
+
+.weather-item p {  
+  font-size: 18px;  
+}  
+
+
+.contact {  
+  margin: 58px;
+  padding: 0px;
+}  
+
+.contact a {  
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}  
+
+.contactnum {  
+  margin-top: 10px;  
+}  
+
+.contactnum img {  
+  width: 500px;
+  height: auto;
+}  
+
+.contact h2 {  
+  margin-top: 10px;  
+  font-size: 20px;  
+}  
+
+
+.google-map {  
+  width: 100%;  
+  height: 300px;  
+  border: 0;  
+  border-radius: 8px;  
+  overflow: hidden;
+  bottom:200px;  
+}  
+
+
+.footer {  
+  background-color: #d92727;
+  color: white;
+  padding: 11px;
+  position: relative;
+  width: 100%;
+  margin: -8px;
+}  
+.footer div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer a {  
+  text-decoration: none; 
+  color: white;
+}  
+
+.location-marker , .location-label{
+  text-align: center;
+  margin: 10px;
 }
