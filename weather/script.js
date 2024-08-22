@@ -1,5 +1,5 @@
 function updateDateTime() {  
-    const now = new Date(); // Get the current date and time  
+    const now = new Date(); 
     const options = {  
         year: 'numeric',  
         month: 'long',  
@@ -8,23 +8,22 @@ function updateDateTime() {
         minute: '2-digit',  
         second: '2-digit',  
         hour12: true  
-    }; // Options for formatting the date and time  
+    }; 
 
-    // Format the date and time  
+   
     const formattedDateTime = now.toLocaleString('en-US', options);  
 
-    // Update the content of the div with the current date and time  
+    
     document.getElementById('datetime').innerText = formattedDateTime;  
 }  
 
-// Call the function once to display the date and time immediately  
+
 updateDateTime();  
 
-// Update the date and time every second  
 setInterval(updateDateTime, 1000);  
 
-const apiKey = 'b670447e8c7c4666b2d65422242008'; // Replace with your actual API key  
-const defaultCity = 'Iligan City'; // Default city  
+const apiKey = '153db001ec0248ec90500739242208'; 
+const defaultCity = 'Iligan City'; 
 
 async function fetchWeather(city) {  
     try {  
@@ -42,10 +41,14 @@ async function fetchWeather(city) {
     }  
 }  
 
-// Fetch weather data for the default city on page load  
+  
 fetchWeather(defaultCity);  
 document.getElementById('searchButton').addEventListener('click', () => {  
 const cityInput = document.getElementById('cityInput').value;  
+document.querySelector('.location-label').innerText = cityInput
+
+var mapurl = `http://maps.google.com/maps?q=${cityInput}&z=10&output=embed`;
+document.querySelector('iframe').setAttribute('src',mapurl)
 if (cityInput) {  
     fetchWeather(cityInput);  
 }  
