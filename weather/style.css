@@ -1,3 +1,4 @@
+
 * {  
   margin: 0;  
   padding: 0;  
@@ -71,11 +72,11 @@ body {
 
 
 .contact {  
-  margin: 58px;
+  margin: 10px;
   padding: 0px;
 }  
 
-.contact a {  
+.contact , .weatherweek a {  
   color: #333;
   text-decoration: none;
   font-weight: bold;
@@ -83,7 +84,8 @@ body {
 }  
 
 .contactnum {  
-  margin-top: 10px;  
+  margin-top: 10px;
+  text-align: left;
 }  
 
 .contactnum img {  
@@ -101,7 +103,6 @@ body {
   width: 100%;  
   height: 300px;  
   border: 0;  
-  border-radius: 8px;  
   overflow: hidden;
   bottom:200px;  
 }  
@@ -128,4 +129,28 @@ body {
 .location-marker , .location-label{
   text-align: center;
   margin: 10px;
+}
+
+.contact,.weatherweek h4{
+  text-align: left;
+  margin-right: 119px;
+} .weatherweek{
+  
+}
+
+.weatweek{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.weather-card-week{
+  padding: 11px;
+  background-color: #d92727;
+  color: white;
+  border-radius: 10px;
+  margin-top: 1%;
+  height: 220px;
+  width: 25%;
+  text-align: center;
 }
